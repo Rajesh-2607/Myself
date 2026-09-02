@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajesh S | Backend Developer & AI/ML Engineer</title>
+    <meta name="description"
+        content="Portfolio of Rajesh S - Backend Developer and AI/ML Engineer specializing in FastAPI, PyTorch, Computer Vision, RAG Chatbots, and Scalable Microservices.">
+    <meta name="keywords"
+        content="Rajesh S, Backend Developer, AI Engineer, ML Engineer, FastAPI, PyTorch, Computer Vision, Chennai">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Animated Particles / Grid Overlay -->
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#about" class="nav-logo">
+                <span class="logo-accent">&lt;</span>Rajesh<span class="logo-accent">.S /&gt;</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link active">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#contact" class="nav-link nav-cta">Get In Touch</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="about" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge-status">
+                        <span class="pulse-dot"></span> Available for Backend & AI/ML Roles
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Rajesh S</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        Backend Developer <span class="divider">|</span> AI/ML Engineer
+                    </h2>
+                    <p class="hero-description">
+                        B.Tech in Artificial Intelligence & Data Science based in Chennai, India. Specializing in
+                        architecting high-performance FastAPI backends, intelligent microservices, production RAG
+                        pipelines, and computer vision systems.
+                    </p>
+                    <div class="hero-tags">
+                        <span class="hero-tag"><i class="fa-solid fa-location-dot"></i> Chennai, India</span>
+                        <span class="hero-tag"><i class="fa-solid fa-graduation-cap"></i> B.Tech AI & DS
+                            (2024–2028)</span>
+                        <span class="hero-tag"><i class="fa-solid fa-server"></i> FastAPI / Microservices</span>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore Projects</span>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+                        <a href="Rajesh_Resume.pdf" download target="_blank" class="btn btn-secondary">
+                            <i class="fa-solid fa-file-arrow-down"></i>
+                            <span>Resume PDF</span>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </a>
+                    </div>
+                    <div class="social-links-hero">
+                        <a href="https://github.com/Rajesh-2607" target="_blank" aria-label="GitHub"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/rajeshs0415" target="_blank" aria-label="LinkedIn"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="mailto:rajeshsv.182006@gmail.com" aria-label="Email"><i
+                                class="fa-solid fa-envelope"></i></a>
+                        <a href="tel:+919790934031" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="terminal-card glass-card">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                            </div>
+                            <div class="terminal-title">rajesh_system.py</div>
+                        </div>
+                        <div class="terminal-body">
+                            <pre><code><span class="code-keyword">class</span> <span class="code-class">BackendAIEngineer</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(self):
+        self.name = <span class="code-str">"Rajesh S"</span>
+        self.role = <span class="code-str">"Backend & AI/ML Engineer"</span>
+        self.stack = [
+            <span class="code-str">"FastAPI"</span>, <span class="code-str">"PyTorch"</span>, 
+            <span class="code-str">"YOLOv8"</span>, <span class="code-str">"Docker"</span>, <span class="code-str">"AWS"</span>
+        ]
+        self.status = <span class="code-str">"Building Production AI"</span>
+
+    <span class="code-keyword">async def</span> <span class="code-func">deploy_solution</span>(self, problem):
+        pipeline = await self.design_architecture(problem)
+        <span class="code-keyword">return</span> pipeline.execute(latency_ms=<span class="code-num">&lt;200</span>)
+
+<span class="code-comment"># System online...</span>
+me = BackendAIEngineer()
+<span class="code-keyword">print</span>(f<span class="code-str">"{me.name} ready to innovate."</span>)</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Tech Stack Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Tech <span class="gradient-text">Stack</span></h2>
+                    <p class="section-subtitle">Battle-tested frameworks, machine learning libraries, and backend tools
+                    </p>
+                </div>
+
+                <!-- Category Filters -->
+                <div class="skill-filters">
+                    <button class="skill-filter-btn active" data-filter="all">All Tech</button>
+                    <button class="skill-filter-btn" data-filter="backend">Backend & APIs</button>
+                    <button class="skill-filter-btn" data-filter="ai">AI / ML</button>
+                    <button class="skill-filter-btn" data-filter="cv">Computer Vision</button>
+                    <button class="skill-filter-btn" data-filter="data">Data & Analytics</button>
+                    <button class="skill-filter-btn" data-filter="cloud">Cloud & DevOps</button>
+                    <button class="skill-filter-btn" data-filter="languages">Languages</button>
+                </div>
+
+                <!-- Skill Cards Grid -->
+                <div class="skills-grid" id="skillsGrid">
+                    <!-- Backend -->
+                    <div class="skill-card glass-card" data-category="backend">
+                        <div class="skill-icon"><i class="fa-solid fa-bolt"></i></div>
+                        <h3 class="skill-name">FastAPI</h3>
+                        <p class="skill-desc">Async REST API design, Pydantic data schemas & microservices architecture.
+                        </p>
+                        <div class="skill-meta"><span class="badge">Core Backend</span></div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="backend">
+                        <div class="skill-icon"><i class="fa-solid fa-network-wired"></i></div>
+                        <h3 class="skill-name">REST APIs & Microservices</h3>
+                        <p class="skill-desc">Modular API architecture, endpoints design, async request handling & CORS.
+                        </p>
+                        <div class="skill-meta"><span class="badge">Architecture</span></div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="backend">
+                        <div class="skill-icon"><i class="fa-solid fa-pepper-hot"></i></div>
+                        <h3 class="skill-name">Flask</h3>
+                        <p class="skill-desc">Lightweight web application backend frameworks & template rendering.</p>
+                        <div class="skill-meta"><span class="badge">Web Backend</span></div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="backend">
+                        <div class="skill-icon"><i class="fa-solid fa-server"></i></div>
+                        <h3 class="skill-name">Pydantic & Uvicorn</h3>
+                        <p class="skill-desc">High-performance ASGI server runners & strict runtime type validation.</p>
+                        <div class="skill-meta"><span class="badge">ASGI & Validation</span></div>
+                    </div>
+
+                    <!-- AI / ML -->
+                    <div class="skill-card glass-card" data-category="ai">
+                        <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+                        <h3 class="skill-name">GPT-4o & RAG</h3>
+                        <p class="skill-desc">Retrieval-Augmented Generation, vector embeddings, prompt tuning & NLU.
+                        </p>
+                        <div class="skill-meta"><span class="badge">GenAI</span></div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="ai">
+                        <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+                        <h3 class="skill-name">FAISS & LangChain</h3>
+                        <p class="skill-desc">Vector index similarity search, context retrieval & AI workflow chains.
+                        </p>
+                        <div class="skill-meta"><span class="badge">Vector Search</span></div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="ai">
+                        <div class="skill-icon"><i class="fa-solid fa-microchip"></i></div>
+                        <h3 class="skill-name">PyTorch</h3>
+                        <p class="skill-desc">Deep learning model inference, neural networks & custom tensor ops.</p>
+                        <div class="skill-meta"><span class="badge">Deep Learning</span></div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="ai">
+                        <div class="skill-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <h3 class="skill-name">XGBoost & Scikit-learn</h3>
+                        <p class="skill-desc">Gradient boosting, SHAP explainability, SMOTE resampling & tuning.</p>
+                        <div class="skill-meta"><span class="badge">Machine Learning</span></div>
+                    </div>
+
+                    <!-- Computer Vision -->
+                    <div class="skill-card glass-card" data-category="cv">
+                        <div class="skill-icon"><i class="fa-solid fa-eye"></i></div>
+                        <h3 class="skill-name">YOLOv8</h3>
+                        <p class="skill-desc">Real-time multi-stream hazard detection, bounding box prediction &
+                            tracking.</p>
+                        <div class="skill-meta"><span class="badge">Object Detection</span></div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="cv">
+                        <div class="skill-icon"><i class="fa-solid fa-video"></i></div>
+                        <h3 class="skill-name">OpenCV</h3>
+                        <p class="skill-desc">Real-time video frame processing, image transformation & IP camera
+                            streams.</p>
+                        <div class="skill-meta"><span class="badge">Vision Processing</span></div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="cv">
+                        <div class="skill-icon"><i class="fa-solid fa-user-gear"></i></div>
+                        <h3 class="skill-name">MTCNN & InceptionResnetV1</h3>
+                        <p class="skill-desc">Face detection, 512-dim embedding extraction & identity alignment.</p>
+                        <div class="skill-meta"><span class="badge">Facial Recognition</span></div>
+                    </div>
+
+                    <!-- Data & Analytics -->
+                    <div class="skill-card glass-card" data-category="data">
+                        <div class="skill-icon"><i class="fa-solid fa-table"></i></div>
+                        <h3 class="skill-name">Pandas & NumPy</h3>
+                        <p class="skill-desc">High-performance data manipulation, feature engineering & numerical
+                            computing.</p>
+                        <div class="skill-meta"><span class="badge">Data Pipeline</span></div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="data">
+                        <div class="skill-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                        <h3 class="skill-name">t-SNE, UMAP & DBSCAN</h3>
+                        <p class="skill-desc">High-dimensional dimensionality reduction, density clustering & metric
+                            evaluation.</p>
+                        <div class="skill-meta"><span class="badge">Clustering & Analytics</span></div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="data">
+                        <div class="skill-icon"><i class="fa-solid fa-sliders"></i></div>
+                        <h3 class="skill-name">Streamlit</h3>
+                        <p class="skill-desc">Multi-page interactive dashboards for ML model analytics & drift
+                            monitoring.</p>
+                        <div class="skill-meta"><span class="badge">Dashboard UI</span></div>
+                    </div>
+
+                    <!-- Cloud & DevOps -->
+                    <div class="skill-card glass-card" data-category="cloud">
+                        <div class="skill-icon"><i class="fa-brands fa-aws"></i></div>
+                        <h3 class="skill-name">AWS EC2</h3>
+                        <p class="skill-desc">Cloud instance provisioning, deployment configuration & production server
+                            hosting.</p>
+                        <div class="skill-meta"><span class="badge">Cloud Infrastructure</span></div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="cloud">
+                        <div class="skill-icon"><i class="fa-brands fa-docker"></i></div>
+                        <h3 class="skill-name">Docker & CI/CD</h3>
+                        <p class="skill-desc">Containerization, automated build/test pipelines & zero-downtime
+                            deployment.</p>
+                        <div class="skill-meta"><span class="badge">DevOps & Automation</span></div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="cloud">
+                        <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+                        <h3 class="skill-name">MySQL & MongoDB</h3>
+                        <p class="skill-desc">Relational DB design, PL/SQL queries, and NoSQL incident metadata logging.
+                        </p>
+                        <div class="skill-meta"><span class="badge">Databases</span></div>
+                    </div>
+
+                    <!-- Languages -->
+                    <div class="skill-card glass-card" data-category="languages">
+                        <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+                        <h3 class="skill-name">Python</h3>
+                        <p class="skill-desc">Primary language for Backend, AI/ML, Data Engineering & Automation.</p>
+                        <div class="skill-meta"><span class="badge">Expert</span></div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="languages">
+                        <div class="skill-icon"><i class="fa-brands fa-java"></i></div>
+                        <h3 class="skill-name">Java & C</h3>
+                        <p class="skill-desc">Object-oriented programming, data structures & systems programming.</p>
+                        <div class="skill-meta"><span class="badge">Core</span></div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="languages">
+                        <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3 class="skill-name">SQL & PL/SQL</h3>
+                        <p class="skill-desc">Complex database queries, stored procedures, joins & index optimization.
+                        </p>
+                        <div class="skill-meta"><span class="badge">Data Querying</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section bg-alt">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+                    <p class="section-subtitle">Real-world software engineering, API development, and cloud AI
+                        deployments</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- Upstride -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="role-title">Backend Developer Intern</h3>
+                                    <h4 class="company-name"><i class="fa-solid fa-building"></i> Upstride</h4>
+                                </div>
+                                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Nov 2025 – Jan
+                                    2026</span>
+                            </div>
+                            <div class="role-tech">
+                                <span>Python</span>
+                                <span>FastAPI</span>
+                                <span>Scikit-learn</span>
+                                <span>Pandas</span>
+                                <span>React</span>
+                                <span>Docker</span>
+                            </div>
+                            <ul class="timeline-bullets">
+                                <li>Designed and built <strong>10+ RESTful APIs</strong> with FastAPI adhering to clean
+                                    API design standards, powering reliable backend ML workflows.</li>
+                                <li>Configured automated <strong>CI/CD pipelines</strong> for continuous integration &
+                                    deployment, achieving <strong>90%+ test coverage</strong> on critical modules.</li>
+                                <li>Performed feature engineering and model evaluation, improving overall ML model
+                                    prediction accuracy by <strong>~15%</strong>.</li>
+                                <li>Documented API endpoints and data processing pipelines for seamless team
+                                    maintainability and developer onboarding.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- LIBA -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="role-title">AI Chatbot Developer</h3>
+                                    <h4 class="company-name"><i class="fa-solid fa-graduation-cap"></i> Loyola Institute
+                                        of Business Administration (LIBA)</h4>
+                                </div>
+                                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Aug 2025 – Sep
+                                    2025</span>
+                            </div>
+                            <div class="role-tech">
+                                <span>Python</span>
+                                <span>FastAPI</span>
+                                <span>GPT-4o</span>
+                                <span>FAISS</span>
+                                <span>AWS EC2</span>
+                            </div>
+                            <ul class="timeline-bullets">
+                                <li>Architected and deployed a production <strong>RAG-based FAQ chatbot</strong> live on
+                                    <code>liba.edu</code> hosted on AWS EC2.</li>
+                                <li>Integrated GPT-4o for natural language understanding and FAISS vector index for
+                                    real-time document context retrieval.</li>
+                                <li>Boosted chatbot answer accuracy by <strong>~20%</strong> through systematic prompt
+                                    engineering, context ranking, and confidence scoring.</li>
+                                <li>Designed a resilient microservices-style processing pipeline with fallback handling,
+                                    reducing manual query workload by <strong>~30%</strong>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section with Interactive Demos -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                    <p class="section-subtitle">Deep dive into production AI systems, fraud detection, computer vision,
+                        and interview simulators</p>
+                </div>
+
+                <div class="projects-list">
+
+                    <!-- Project 1: Enterprise Fraud Risk Intelligence Platform -->
+                    <div class="project-card glass-card">
+                        <div class="project-info">
+                            <div class="project-badge"><i class="fa-solid fa-shield-halved"></i> FinTech AI</div>
+                            <h3 class="project-title">Enterprise Fraud Risk Intelligence Platform</h3>
+                            <p class="project-desc">
+                                End-to-end transaction fraud detection system generating 0–100% risk scores with
+                                real-time SHAP explainability, cutting analyst review time by 40%.
+                            </p>
+                            <div class="project-highlights">
+                                <div class="metric-box">
+                                    <span class="metric-val">0.973</span>
+                                    <span class="metric-lbl">ROC-AUC</span>
+                                </div>
+                                <div class="metric-box">
+                                    <span class="metric-val">0.819</span>
+                                    <span class="metric-lbl">PR-AUC</span>
+                                </div>
+                                <div class="metric-box">
+                                    <span class="metric-val">40%</span>
+                                    <span class="metric-lbl">Time Saved</span>
+                                </div>
+                            </div>
+                            <div class="project-tags">
+                                <span>XGBoost</span><span>SHAP</span><span>SMOTE</span><span>Streamlit</span><span>Scikit-learn</span><span>Pandas</span>
+                            </div>
+                            <div class="project-features">
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i> SMOTE imbalanced data handling &
+                                        RandomizedSearchCV hyperparameter tuning.</li>
+                                    <li><i class="fa-solid fa-check"></i> PSI + KS tests drift monitoring integrated
+                                        into a 5-page Streamlit dashboard.</li>
+                                    <li><i class="fa-solid fa-check"></i> Feature pipeline covering transaction
+                                        velocity, account age, and behavioral patterns.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Demo Widget 1 -->
+                        <div class="project-demo">
+                            <div class="demo-card">
+                                <div class="demo-header">
+                                    <span><i class="fa-solid fa-flask"></i> Interactive Risk Score & SHAP
+                                        Simulator</span>
+                                    <span class="demo-live-tag">LIVE DEMO</span>
+                                </div>
+                                <div class="demo-body">
+                                    <div class="demo-control-group">
+                                        <label for="txnAmount">Transaction Amount ($): <span
+                                                id="valAmount">$1,250</span></label>
+                                        <input type="range" id="txnAmount" min="10" max="5000" step="50" value="1250">
+                                    </div>
+                                    <div class="demo-control-group">
+                                        <label for="txnVelocity">Txn Velocity (Last 1hr): <span id="valVelocity">7
+                                                txns</span></label>
+                                        <input type="range" id="txnVelocity" min="1" max="20" step="1" value="7">
+                                    </div>
+                                    <div class="demo-control-group">
+                                        <label for="accountAge">Account Age (Days): <span id="valAge">45
+                                                days</span></label>
+                                        <input type="range" id="accountAge" min="1" max="365" step="5" value="45">
+                                    </div>
+
+                                    <div class="risk-result">
+                                        <div class="risk-gauge-box">
+                                            <div class="risk-score-display" id="riskScoreVal">64%</div>
+                                            <div class="risk-label" id="riskLabel">ELEVATED RISK</div>
+                                        </div>
+                                        <div class="shap-breakdown">
+                                            <div class="shap-title">SHAP Feature Contributions</div>
+                                            <div class="shap-bar-item">
+                                                <span>Txn Velocity (+28%)</span>
+                                                <div class="bar-bg">
+                                                    <div class="bar-fill red" id="shapVelocity" style="width: 70%;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="shap-bar-item">
+                                                <span>Txn Amount (+21%)</span>
+                                                <div class="bar-bg">
+                                                    <div class="bar-fill orange" id="shapAmount" style="width: 55%;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="shap-bar-item">
+                                                <span>Account Age (-15%)</span>
+                                                <div class="bar-bg">
+                                                    <div class="bar-fill green" id="shapAge" style="width: 35%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: AI Smart CCTV & Hazard Detection -->
+                    <div class="project-card glass-card">
+                        <div class="project-info">
+                            <div class="project-badge"><i class="fa-solid fa-video"></i> Computer Vision</div>
+                            <h3 class="project-title">AI Smart CCTV & Hazard Detection</h3>
+                            <p class="project-desc">
+                                Computer vision system converting smartphones into IP camera feeds for real-time hazard
+                                detection with 5+ concurrent streams and zero-latency YOLOv8 inference.
+                            </p>
+                            <div class="project-highlights">
+                                <div class="metric-box">
+                                    <span class="metric-val">5+</span>
+                                    <span class="metric-lbl">Live Feeds</span>
+                                </div>
+                                <div class="metric-box">
+                                    <span class="metric-val">50%</span>
+                                    <span class="metric-lbl">Faster Response</span>
+                                </div>
+                                <div class="metric-box">
+                                    <span class="metric-val">0-Downtime</span>
+                                    <span class="metric-lbl">Cloud Deploy</span>
+                                </div>
+                            </div>
+                            <div class="project-tags">
+                                <span>YOLOv8</span><span>OpenCV</span><span>FastAPI</span><span>React</span><span>MongoDB</span><span>Docker</span>
+                            </div>
+                            <div class="project-features">
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i> Async FastAPI backend storing incident
+                                        metadata in MongoDB with instant Telegram alert triggers.</li>
+                                    <li><i class="fa-solid fa-check"></i> Live React dashboard for concurrent stream
+                                        monitoring and historical incident tracking.</li>
+                                    <li><i class="fa-solid fa-check"></i> CI/CD pipeline for automated Docker cloud
+                                        deployment on zero-downtime architecture.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Demo Widget 2 -->
+                        <div class="project-demo">
+                            <div class="demo-card">
+                                <div class="demo-header">
+                                    <span><i class="fa-solid fa-eye"></i> Simulated Multi-Stream Hazard Detector</span>
+                                    <span class="demo-live-tag">SIMULATOR</span>
+                                </div>
+                                <div class="demo-body">
+                                    <div class="cctv-selector">
+                                        <button class="cctv-btn active" data-cam="cam1">CAM 01 - Warehouse</button>
+                                        <button class="cctv-btn" data-cam="cam2">CAM 02 - Entrance</button>
+                                        <button class="cctv-btn" data-cam="cam3">CAM 03 - Loading Bay</button>
+                                    </div>
+                                    <div class="cctv-viewport">
+                                        <canvas id="cctvCanvas" width="400" height="220"></canvas>
+                                        <div class="cctv-overlay">
+                                            <span class="rec-dot"></span> REC | <span id="cctvCamName">CAM 01 -
+                                                Warehouse</span> | YOLOv8 FPS: 30
+                                        </div>
+                                    </div>
+                                    <div class="cctv-alerts" id="cctvAlertFeed">
+                                        <div class="alert-item hazard">
+                                            <i class="fa-solid fa-triangle-exclamation"></i>
+                                            <span>[10:58:12] HAZARD DETECTED: Smoke / Fire Signal (Confidence:
+                                                94.2%)</span>
+                                        </div>
+                                        <div class="alert-item normal">
+                                            <i class="fa-solid fa-check-circle"></i>
+                                            <span>[10:58:05] Telegram Alert Dispatched -> Manager Channel</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: AI Voice Assistant - Virtual HR Interview System -->
+                    <div class="project-card glass-card">
+                        <div class="project-info">
+                            <div class="project-badge"><i class="fa-solid fa-microphone"></i> Voice AI & FastAPI</div>
+                            <h3 class="project-title">AI Voice Assistant — Virtual HR Interview System</h3>
+                            <p class="project-desc">
+                                Voice-interactive interview simulator offering adaptive question progression across 3
+                                difficulty tiers with STAR-method candidate evaluation.
+                            </p>
+                            <div class="project-highlights">
+                                <div class="metric-box">
+                                    <span class="metric-val">&lt;200ms</span>
+                                    <span class="metric-lbl">Speech Latency</span>
+                                </div>
+                                <div class="metric-box">
+                                    <span class="metric-val">50+</span>
+                                    <span class="metric-lbl">Sessions Tested</span>
+                                </div>
+                                <div class="metric-box">
+                                    <span class="metric-val">STAR</span>
+                                    <span class="metric-lbl">Method Scoring</span>
+                                </div>
+                            </div>
+                            <div class="project-tags">
+                                <span>Python</span><span>FastAPI</span><span>Pydantic</span><span>Uvicorn</span><span>Web
+                                    Speech API</span>
+                            </div>
+                            <div class="project-features">
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i> Adaptive question flow (Beginner,
+                                        Intermediate, Advanced) with non-repeating session history.</li>
+                                    <li><i class="fa-solid fa-check"></i> Keyword matching, clarity check, and real-time
+                                        candidate feedback report generation.</li>
+                                    <li><i class="fa-solid fa-check"></i> Hands-free Web Speech API recognition & speech
+                                        synthesis with sub-200ms round-trip latency.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Demo Widget 3 -->
+                        <div class="project-demo">
+                            <div class="demo-card">
+                                <div class="demo-header">
+                                    <span><i class="fa-solid fa-robot"></i> Interactive HR Question & STAR
+                                        Analyzer</span>
+                                    <span class="demo-live-tag">DEMO</span>
+                                </div>
+                                <div class="demo-body">
+                                    <div class="voice-sim-tier">
+                                        <button class="tier-btn active" data-tier="beginner">Beginner</button>
+                                        <button class="tier-btn" data-tier="intermediate">Intermediate</button>
+                                        <button class="tier-btn" data-tier="advanced">Advanced</button>
+                                    </div>
+                                    <div class="question-box">
+                                        <div class="q-label"><i class="fa-solid fa-circle-question"></i> AI HR Question:
+                                        </div>
+                                        <div class="q-text" id="hrQuestionText">"Describe a situation where you had to
+                                            optimize an API endpoint for high concurrency."</div>
+                                    </div>
+                                    <div class="voice-wave-container">
+                                        <div class="waveform" id="waveform">
+                                            <span class="bar"></span><span class="bar"></span><span
+                                                class="bar"></span><span class="bar"></span><span
+                                                class="bar"></span><span class="bar"></span><span
+                                                class="bar"></span><span class="bar"></span>
+                                        </div>
+                                        <button class="mic-btn" id="micBtn"><i class="fa-solid fa-microphone"></i> Test
+                                            Voice Response</button>
+                                    </div>
+                                    <div class="star-analysis" id="starAnalysis">
+                                        <div class="star-score">STAR Evaluation Score: <strong class="text-cyan">8.8 /
+                                                10</strong></div>
+                                        <div class="star-metrics">
+                                            <span class="tag-star">Situation: ✓</span>
+                                            <span class="tag-star">Task: ✓</span>
+                                            <span class="tag-star">Action: ✓</span>
+                                            <span class="tag-star">Result: ✓ (Quantified)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Face Detection & Clustering System -->
+                    <div class="project-card glass-card">
+                        <div class="project-info">
+                            <div class="project-badge"><i class="fa-solid fa-users-viewfinder"></i> Facial AI Pipeline
+                            </div>
+                            <h3 class="project-title">Face Detection & Clustering System</h3>
+                            <p class="project-desc">
+                                Automated computer vision pipeline for face detection, 512-D embedding extraction,
+                                identity clustering, evaluation metrics, and auto-organized identity folders.
+                            </p>
+                            <div class="project-highlights">
+                                <div class="metric-box">
+                                    <span class="metric-val">1,000+</span>
+                                    <span class="metric-lbl">Images / Run</span>
+                                </div>
+                                <div class="metric-box">
+                                    <span class="metric-val">90%+</span>
+                                    <span class="metric-lbl">Grouping Acc.</span>
+                                </div>
+                                <div class="metric-box">
+                                    <span class="metric-val">100%</span>
+                                    <span class="metric-lbl">Manual Effort Saved</span>
+                                </div>
+                            </div>
+                            <div class="project-tags">
+                                <span>PyTorch</span><span>MTCNN</span><span>InceptionResnetV1</span><span>DBSCAN</span><span>t-SNE</span><span>UMAP</span>
+                            </div>
+                            <div class="project-features">
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i> MTCNN face detection paired with
+                                        InceptionResnetV1 deep feature extraction.</li>
+                                    <li><i class="fa-solid fa-check"></i> Clustering via DBSCAN, Hierarchical, and
+                                        Chinese Whispers evaluated with Silhouette, NMI & ARI metrics.</li>
+                                    <li><i class="fa-solid fa-check"></i> Visual identity dashboard with t-SNE / UMAP
+                                        plots handling varied lighting, angles & occlusions.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Demo Widget 4 -->
+                        <div class="project-demo">
+                            <div class="demo-card">
+                                <div class="demo-header">
+                                    <span><i class="fa-solid fa-diagram-project"></i> Clustering Plot & Pipeline
+                                        Stepper</span>
+                                    <span class="demo-live-tag">EXPLORER</span>
+                                </div>
+                                <div class="demo-body">
+                                    <div class="pipeline-stepper">
+                                        <span class="step active" title="Images">1. Image Input</span> →
+                                        <span class="step active" title="MTCNN">2. MTCNN</span> →
+                                        <span class="step active" title="InceptionResnetV1">3. 512D Embeddings</span> →
+                                        <span class="step active" title="DBSCAN">4. DBSCAN</span>
+                                    </div>
+                                    <div class="cluster-canvas-container">
+                                        <canvas id="clusterCanvas" width="400" height="200"></canvas>
+                                    </div>
+                                    <div class="cluster-controls">
+                                        <button class="cluster-btn active" data-algo="dbscan">DBSCAN Plot</button>
+                                        <button class="cluster-btn" data-algo="tsne">t-SNE Plot</button>
+                                        <button class="cluster-btn" data-algo="umap">UMAP Projection</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements & Extracurriculars Section -->
+        <section id="achievements" class="section bg-alt">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Achievements & <span class="gradient-text">Activities</span></h2>
+                    <p class="section-subtitle">Hackathons, research presentations, and community leadership</p>
+                </div>
+
+                <div class="achievements-grid">
+                    <!-- Achievement 1 -->
+                    <div class="achievement-card glass-card">
+                        <div class="achievement-icon"><i class="fa-solid fa-trophy"></i></div>
+                        <h3 class="achievement-title">AI TestGen — TN-IMPACT @ KIT</h3>
+                        <div class="achievement-date">March 2026</div>
+                        <p class="achievement-desc">
+                            Presented <strong>AI TestGen</strong> at TN-IMPACT @ KIT. Built an automated AI system
+                            achieving <strong>60–80% faster test preparation</strong> compared with conventional manual
+                            methods.
+                        </p>
+                    </div>
+
+                    <!-- Achievement 2 -->
+                    <div class="achievement-card glass-card">
+                        <div class="achievement-icon"><i class="fa-solid fa-code-fork"></i></div>
+                        <h3 class="achievement-title">Hackathons & Competitions</h3>
+                        <div class="achievement-date">Continuous Innovation</div>
+                        <ul class="hackathon-list">
+                            <li><i class="fa-brands fa-google"></i> Google Gemini Hackathon</li>
+                            <li><i class="fa-solid fa-flag"></i> Smart India Hackathon (SIH)</li>
+                            <li><i class="fa-solid fa-microchip"></i> SRM Kattankulathur IoT Hackathon</li>
+                            <li><i class="fa-solid fa-stopwatch"></i> 30-Hour Intensive Hackathon</li>
+                        </ul>
+                    </div>
+
+                    <!-- Achievement 3 -->
+                    <div class="achievement-card glass-card">
+                        <div class="achievement-icon"><i class="fa-solid fa-hands-holding-child"></i></div>
+                        <h3 class="achievement-title">NSS Community Volunteer</h3>
+                        <div class="achievement-date">Social Outreach</div>
+                        <p class="achievement-desc">
+                            Active volunteer in National Service Scheme (NSS). Organized and participated in orphanage
+                            visits, village outreach programs, school education initiatives, and community health
+                            awareness campaigns.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Education & <span class="gradient-text">Background</span></h2>
+                    <p class="section-subtitle">Academic foundations in Artificial Intelligence and Data Science</p>
+                </div>
+
+                <div class="education-card glass-card max-width-800">
+                    <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="edu-details">
+                        <span class="edu-dates">June 2024 – May 2028</span>
+                        <h3 class="edu-degree">B.Tech — Artificial Intelligence & Data Science</h3>
+                        <h4 class="edu-school">Loyola College of Engineering and Technology</h4>
+                        <p class="edu-location"><i class="fa-solid fa-location-dot"></i> Chennai, Tamil Nadu, India</p>
+                        <p class="edu-desc">
+                            Focused on machine learning theory, algorithms, cloud deployment, system architecture,
+                            database optimization, and scalable backend design.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section bg-alt">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+                    <p class="section-subtitle">Interested in collaborating or discussing backend & AI/ML opportunities?
+                    </p>
+                </div>
+
+                <div class="contact-wrapper">
+                    <div class="contact-info glass-card">
+                        <h3>Contact Information</h3>
+                        <p>Feel free to reach out via email, phone, or LinkedIn. I am always open to discussing backend
+                            engineering roles, AI research projects, and backend microservices opportunities.</p>
+
+                        <div class="contact-methods">
+                            <div class="contact-item" id="copyEmailBtn" title="Click to copy email">
+                                <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <span class="c-label">Email</span>
+                                    <span class="c-val">rajeshsv.182006@gmail.com</span>
+                                </div>
+                                <button class="copy-btn"><i class="fa-regular fa-copy"></i></button>
+                            </div>
+
+                            <div class="contact-item" id="copyPhoneBtn" title="Click to copy phone">
+                                <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <span class="c-label">Phone</span>
+                                    <span class="c-val">+91 9790934031</span>
+                                </div>
+                                <button class="copy-btn"><i class="fa-regular fa-copy"></i></button>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <span class="c-label">Location</span>
+                                    <span class="c-val">Chennai, Tamil Nadu, India</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links-contact">
+                            <a href="https://github.com/Rajesh-2607" target="_blank" class="social-btn"><i
+                                    class="fa-brands fa-github"></i> GitHub</a>
+                            <a href="https://linkedin.com/in/rajeshs0415" target="_blank" class="social-btn"><i
+                                    class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                            <a href="https://rajesh-2607.github.io/PortFolio" target="_blank" class="social-btn"><i
+                                    class="fa-solid fa-globe"></i> Portfolio Web</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form glass-card">
+                        <h3>Send a Direct Message</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="formName">Your Name</label>
+                                <input type="text" id="formName" placeholder="e.g. Alex Rivera" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="formEmail">Your Email</label>
+                                <input type="email" id="formEmail" placeholder="alex@company.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="formSubject">Subject</label>
+                                <input type="text" id="formSubject" placeholder="Opportunity / Project Inquiry"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="formMessage">Message</label>
+                                <textarea id="formMessage" rows="4"
+                                    placeholder="Hello Rajesh, I would love to connect regarding..."
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block" id="formSubmitBtn">
+                                <span>Send Message</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                            <div class="form-status" id="formStatus"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="#about" class="nav-logo">
+                    <span class="logo-accent">&lt;</span>Rajesh<span class="logo-accent">.S /&gt;</span>
+                </a>
+                <p>© 2026 Rajesh S. Engineered with passion for Backend & AI Systems.</p>
+            </div>
+            <div class="footer-right">
+                <a href="#about"><i class="fa-solid fa-chevron-up"></i> Back to Top</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript File -->
+    <script src="script.js"></script>
+</body>
+
+</html>
