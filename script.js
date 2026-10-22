@@ -417,25 +417,70 @@ document.addEventListener('DOMContentLoaded', () => {
     const formStatus = document.getElementById('formStatus');
     const formSubmitBtn = document.getElementById('formSubmitBtn');
 
+    // Set this to a form endpoint (e.g. Formspree/Web3Forms) to deliver
+    // messages in the background. While it is empty the form falls back to
+    // opening the visitor's mail client, so a message is never silently lost.
+    const CONTACT_ENDPOINT = '';
+    const CONTACT_EMAIL = 'rajeshsv.182006@gmail.com';
+
+    const resetSubmitBtn = () => {
+        formSubmitBtn.disabled = false;
+        formSubmitBtn.innerHTML = '<span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>';
+    };
+
+    const clearStatusLater = () => setTimeout(() => {
+        formStatus.textContent = '';
+        formStatus.className = 'form-status';
+    }, 6000);
+
     if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
+        contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
+
+            const payload = {
+                name: document.getElementById('formName').value.trim(),
+                email: document.getElementById('formEmail').value.trim(),
+                subject: document.getElementById('formSubject').value.trim(),
+                message: document.getElementById('formMessage').value.trim()
+            };
+
             formSubmitBtn.disabled = true;
             formSubmitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
 
-            setTimeout(() => {
-                formSubmitBtn.disabled = false;
-                formSubmitBtn.innerHTML = '<span>Message Sent!</span> <i class="fa-solid fa-check"></i>';
-                formStatus.className = 'form-status success';
-                formStatus.textContent = 'Thank you! Your message has been sent successfully to Rajesh.';
+            if (CONTACT_ENDPOINT) {
+                try {
+                    const res = await fetch(CONTACT_ENDPOINT, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+                    if (!res.ok) throw new Error('Request failed with ' + res.status);
 
-                contactForm.reset();
+                    formSubmitBtn.innerHTML = '<span>Message Sent!</span> <i class="fa-solid fa-check"></i>';
+                    formStatus.className = 'form-status success';
+                    formStatus.textContent = 'Thanks! Your message has been sent.';
+                    contactForm.reset();
+                } catch (err) {
+                    formStatus.className = 'form-status error';
+                    formStatus.textContent = 'Could not send that — please email ' + CONTACT_EMAIL + ' directly.';
+                }
+                setTimeout(resetSubmitBtn, 4000);
+                clearStatusLater();
+                return;
+            }
 
-                setTimeout(() => {
-                    formSubmitBtn.innerHTML = '<span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>';
-                    formStatus.textContent = '';
-                }, 4000);
-            }, 1200);
+            // No endpoint configured: hand the message to the visitor's mail client.
+            const subject = payload.subject || ('Portfolio enquiry from ' + (payload.name || 'a visitor'));
+            const body = 'From: ' + payload.name + ' <' + payload.email + '>' +
+                '\n\n' + payload.message;
+            window.location.href = 'mailto:' + CONTACT_EMAIL +
+                '?subject=' + encodeURIComponent(subject) +
+                '&body=' + encodeURIComponent(body);
+
+            formStatus.className = 'form-status success';
+            formStatus.textContent = 'Opening your email app with the message ready to send.';
+            resetSubmitBtn();
+            clearStatusLater();
         });
     }
 });
